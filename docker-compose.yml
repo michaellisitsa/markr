@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    # Official rails docker docs:
+    # https://github.com/docker/awesome-compose/tree/master/official-documentation-samples/rails/
+    command: "./bin/rails s -p 10005 -b '0.0.0.0'"
+    ports:
+      - "10005:10005"
