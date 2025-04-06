@@ -32,6 +32,15 @@ test = Test.create(id:1)
 Result.create!(student_number: 1, first_name: 'michael', last_name: 'lisitsa', summary_available: 10, summary_obtained: 4, test_id: test.id)
 ```
 
-## Accessing result
+- Add to existing model
 
-1. Go to browser at [http://localhost:10005/results/1](http://localhost:10005/results/1)
+```ruby
+
+test = Test.find("1")
+result = Result.create!(student_number: 2, first_name: 'john', last_name: 'smith', summary_available: 10, summary_obtained: 5, test_id: test.id)
+```
+
+## Accessing result / test
+
+1. result [http://localhost:10005/result/1](http://localhost:10005/result/1)
+2. test aggregate [http://localhost:10005/results/1/aggregate](http://localhost:10005/results/1/aggregate)
