@@ -7,8 +7,6 @@ The Result has an auto-incrementing primary key. The test is keyed by its test-i
 
 ## ASSUMPTIONS
 
-Any key assumptions you made about the problem and solution spaces. Your boss hates questions, so you should feel free to make (and document!) whatever assumptions you need in order to get the prototype off the ground
-
 - Results should be stored in a SQL database instead of as raw XML files.
   - Allows for analytics to be conducted using Rails ORM in the aggregate function
 - We do not need to store Student numbers as unique records with a relationship to each Result, however this may be a likely feature so that can be achieved with a migration script.
