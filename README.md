@@ -19,9 +19,6 @@ Any key assumptions you made about the problem and solution spaces. Your boss ha
 docker compose build
 ```
 
-```
-
-
 ## Basic API Methods
 
 1. result [http://localhost:10005/result/1](http://localhost:10005/result/1)
@@ -30,8 +27,12 @@ docker compose build
 ## TODO:
 
 ### Import script
+
 - Checks if a previous combination of test-id and student-id combo exists
   - if yes: updates the available or obtained score if its higher
   - if no: creates the model
 - if the document is missing key bits reject. Reject entire document.
+
+```
+
 ```
