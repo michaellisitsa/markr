@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     ## Segregating result and results routes is yuck.
     get "result/:resultId" => "results#show"
     get "results/:testId/aggregate" => "tests#aggregate"
+    post "import" => "documents#import"
     # Defines the root path route ("/")
     # root "posts#index"
 end

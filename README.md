@@ -1,28 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-- Ruby version
-
-- System dependencies
-
-- Configuration
-
-- Database creation
-
-- Database initialization
-
-- How to run the test suite
-
-- Services (job queues, cache servers, search engines, etc.)
-
-- Deployment instructions
-
-- ...
-
 ## Adding Records
 
 - Add test or result
@@ -44,3 +21,12 @@ result = Result.create!(student_number: 2, first_name: 'john', last_name: 'smith
 
 1. result [http://localhost:10005/result/1](http://localhost:10005/result/1)
 2. test aggregate [http://localhost:10005/results/1/aggregate](http://localhost:10005/results/1/aggregate)
+
+## TODO:
+
+### Import script
+
+- Checks if a previous combination of test-id and student-id combo exists
+  - if yes: updates the available or obtained score if its higher
+  - if no: creates the model
+- if the document is missing key bits reject. Reject entire document.

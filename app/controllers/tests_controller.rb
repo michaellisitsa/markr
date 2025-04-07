@@ -6,7 +6,7 @@ class TestsController < ApplicationController
 
         # Percentile Calcs
         # Percentile formula per https://www.dummies.com/article/academics-the-arts/math/statistics/how-to-calculate-percentiles-in-statistics-169783/
-        sorted = results.map { |result| Integer(result.summary_obtained / result.summary_available.to_f * 100) }.sort()
+        sorted = results.map { |result| result.summary_obtained / result.summary_available.to_f * 100 }.sort()
         percentile_values = {}
         [ 0.25, 0.50, 0.75 ].each do |percentile|
             percentile_index = (percentile * results.size).ceil
